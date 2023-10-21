@@ -169,7 +169,7 @@ void setup()
 
 
 
-                                //--firebutton---------------------------------------
+                                //--firebutton pressed---------------------------------------
     
                                 if (Joy == 144) { // 0 position + fire
                                   xaxis1 = 512;
@@ -247,7 +247,7 @@ void setup()
                               //  debounce                               
                               MemoJoy1 = Joy;             // save last state
                                  
-                              // toggle our led
+                              // toggle our led - optional - uncomment if you dont need the LED to flash
                               ledOn = !ledOn;
                               digitalWrite(ledPin, ledOn);
                       
