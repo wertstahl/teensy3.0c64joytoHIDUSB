@@ -16,7 +16,7 @@
        GND <--- 8        Ground
        6   <--- 9        Button2 (optional)
     
-       Joystick 2
+       Joystick 2       // todo, not implemented
     
        IO DB9  Function
     
@@ -229,15 +229,15 @@ void setup()
                             //-----------------------------------------
 
                                 
-                              //  Alter Values Accordingly
-                              Serial.print("  JOY:");
-                              Serial.print(Joy);
-                              Serial.print("  X:");
-                              Serial.print(xaxis1);
-                              Serial.print("  Y:");
-                              Serial.print(yaxis1);
-                              Serial.print("  FB:");
-                              Serial.println(fbutton1);
+                              ////  Uncomment this section for debug output
+                              // Serial.print("  JOY:");
+                              // Serial.print(Joy);
+                              // Serial.print("  X:");
+                              // Serial.print(xaxis1);
+                              // Serial.print("  Y:");
+                              // Serial.print(yaxis1);
+                              // Serial.print("  FB:");
+                              // Serial.println(fbutton1);
 
                               // Update Joystick
                               Joystick.button (1,fbutton1);
